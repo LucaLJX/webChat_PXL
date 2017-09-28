@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    // 参数
+    motto: 'Hello World', 
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -15,6 +16,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  goToTest: function () {
+    wx.navigateTo({
+      url: '../testPage/test',
+    })
+  },
+  // 页面加载完成时触发
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
