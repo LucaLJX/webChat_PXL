@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/nav/nav",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/testPage/test"
+    "pages/demo/swiper/swiper"
   ],
   "window":{
     "backgroundTextStyle":"light",
