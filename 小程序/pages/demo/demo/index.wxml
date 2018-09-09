@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header">
+    <text>照片</text>
+  </view>
+  <view class="btn-container">
+    <button type="primary" plain="true" bindtap="choseBtn">选择</button>
+    <button type="primary" plain="true" bindtap="removeLast">删除最后一项</button>
+    <button type="primary" plain="true" bindtap="addLast">最后加一项</button>
+    <button type="primary" plain="true" bindtap="concat2Arr">两组拼接</button>
+    <button type="primary" plain="true" bindtap="changeBtn">替换其中一项</button>
+  </view>
+  <view class="content-container">
+    <view wx:for="{{ imgsArr }}" wx:for-item="imgItem" wx:for-index="id" wx:key="id">
+      <text>{{ imgItem._index }}</text>
+      <image class="testImg" src="{{ imgItem.url }}" />
+    </view>
+  </view>
+</view>

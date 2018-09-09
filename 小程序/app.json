@@ -1,14 +1,40 @@
 {
   "pages":[
+    "pages/demo/demo/index",
     "pages/nav/nav",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/demo/swiper/swiper"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/demo/demo/index",
+        "text": "卡片",
+        "color": "#8e8d8d",
+        "selectedColor": "#f44336",
+        "iconPath": "images/tabbar/card-normal.png",
+        "selectedIconPath": "images/tabbar/card-press.png"
+      },
+      {
+        "pagePath": "pages/nav/nav",
+        "text": "我",
+        "color": "#8e8d8d",
+        "selectedColor": "#f44336",
+        "iconPath": "images/tabbar/me-normal.png",
+        "selectedIconPath": "images/tabbar/me-press.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
   }
 }

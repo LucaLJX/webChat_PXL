@@ -5,6 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    console.log('全局只触发一次 - onLaunch')
 
     // 登录
     wx.login({
@@ -35,5 +36,11 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  onShow: function () {
+    console.log('主入口的 - onshow')
+  },
+  onHide: function () {
+    console.log('主入口的 - onhide')
   }
 })

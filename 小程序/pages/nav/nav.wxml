@@ -3,7 +3,6 @@
     welcome {{ userInfo.nickName }}
   </view>
   <view class="btn-area">
-    <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">swiper demo</navigator>
     
 </view>
 </view>
